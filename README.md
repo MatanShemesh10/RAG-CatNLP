@@ -1,4 +1,4 @@
-![CatNLP-logo](https://github.com/user-attachments/assets/f60ff8fd-c8a8-4188-9098-ed7770ea6fbf)
+<img src="https://github.com/user-attachments/assets/f60ff8fd-c8a8-4188-9098-ed7770ea6fbf" alt="CatNLP-logo" width="200"/>
 
 # 🐱 CatNLP – Local RAG Chatbot
 
