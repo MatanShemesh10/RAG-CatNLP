@@ -11,7 +11,9 @@ This chatbot can answer questions based on a custom document you provide. It use
 
 The goal: create a private, efficient chatbot that gives answers based strictly on your data - without relying on any cloud API.
 
-## Usage Example:
+---
+
+## 🧩 Usage Example:
 
 ![example-chat](https://github.com/user-attachments/assets/a7bd801b-d4b4-43a5-b574-d0d879dce4ed)
 
