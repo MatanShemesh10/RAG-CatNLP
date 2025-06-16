@@ -6,6 +6,13 @@ CatNLP is a local Retrieval-Augmented Generation (RAG) chatbot that runs fully o
 
 ---
 
+## 👤 Author
+
+Created by **Matan Shemesh**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/matanshemesh/)
+
+---
+
 ## 🚀 What This Project Does
 This chatbot can answer questions based on a custom document you provide. It uses a local embedding model to understand your document and a local language model (via [Ollama](https://ollama.com/)) to generate human-like answers grounded in your content.
 
@@ -21,15 +28,15 @@ The goal: create a private, efficient chatbot that gives answers based strictly 
 
 ## 🧠 How It Works (RAG Overview)
 
-We use a standard **RAG (Retrieval-Augmented Generation)** pipeline:
+A standard **RAG (Retrieval-Augmented Generation)** pipeline:
 
 1. **Embedding Phase (Preprocessing):**
    - A local document (e.g. a text file with facts) is split into chunks (in our case: per line).
    - Each chunk is converted into a numerical vector using an **embedding model**.
 
 2. **Retrieval Phase (at runtime):**
-   - When a user asks a question, we compute its embedding.
-   - We compare this to the precomputed vectors and find the top-N most similar chunks (via cosine similarity).
+   - When a user submits a query, its embedding is computed.
+   - The embedding is compared to the stored vectors, and the top-N most similar chunks are retrieved using cosine similarity.
 
 3. **Generation Phase:**
    - These relevant chunks are passed to the **language model** as context.
@@ -47,7 +54,7 @@ We use a standard **RAG (Retrieval-Augmented Generation)** pipeline:
 ---
 
 ## 💡 The Input Document
-We used a sample `.txt` file containing factual knowledge (e.g. about cats). The file is embedded once during startup and stored in memory as vector representations. 
+A sample `.txt` file containing factual knowledge (e.g. about cats). The file is embedded once during startup and stored in memory as vector representations. 
 
 > You can replace it with any custom file by modifying `main.py` to load your own text.
 
